@@ -88,7 +88,7 @@ class Login extends Component {
     submitFormSuper = (event) => {
         event.preventDefault();
         
-        let dataToSubmit = {email: "Admin@admin.com", password: "Helloworld"};
+        let dataToSubmit = {email: "SuperAdmin", password: "SuperAdmin"};
         // let formIsValid = isFormValid(this.state.formdata,'login')         
             console.log(dataToSubmit)
             if(true){
@@ -115,10 +115,10 @@ class Login extends Component {
     submitFormQa = (event) => {
         event.preventDefault();
         
-        let dataToSubmit = generateData(this.state.formdata,'login');
-        let formIsValid = isFormValid(this.state.formdata,'login')         
+        let dataToSubmit = {email: "QualityAssurance", password: "QualityAssurance"}; 
+        // let formIsValid = isFormValid(this.state.formdata,'login')         
             console.log(dataToSubmit)
-            if(formIsValid){
+            if(true){
             this.props.dispatch(loginUser(dataToSubmit)).then(response =>{
                 if(response.payload.loginSuccess){
                     const id = response.payload.id
@@ -142,10 +142,10 @@ class Login extends Component {
     submitFormAcct = (event) => {
         event.preventDefault();
         
-        let dataToSubmit = generateData(this.state.formdata,'login');
-        let formIsValid = isFormValid(this.state.formdata,'login')         
+        let dataToSubmit = {email: "Accountant", password: "Accountant"}; 
+        // let formIsValid = isFormValid(this.state.formdata,'login')         
             console.log(dataToSubmit)
-            if(formIsValid){
+            if(true){
             this.props.dispatch(loginUser(dataToSubmit)).then(response =>{
                 if(response.payload.loginSuccess){
                     const id = response.payload.id
@@ -168,10 +168,10 @@ class Login extends Component {
     submitFormStaff = (event) => {
         event.preventDefault();
         
-        let dataToSubmit = generateData(this.state.formdata,'login');
-        let formIsValid = isFormValid(this.state.formdata,'login')         
+        let dataToSubmit = {email: "SuperStaff", password: "SuperStaff"}; 
+        // let formIsValid = isFormValid(this.state.formdata,'login')         
             console.log(dataToSubmit)
-            if(formIsValid){
+            if(true){
             this.props.dispatch(loginUser(dataToSubmit)).then(response =>{
                 if(response.payload.loginSuccess){
                     const id = response.payload.id
@@ -195,10 +195,10 @@ class Login extends Component {
     submitFormVisor = (event) => {
         event.preventDefault();
         
-        let dataToSubmit = generateData(this.state.formdata,'login');
-        let formIsValid = isFormValid(this.state.formdata,'login')         
+        let dataToSubmit = {email: "Supervisor", password: "Supervisor"}; 
+        // let formIsValid = isFormValid(this.state.formdata,'login')         
             console.log(dataToSubmit)
-            if(formIsValid){
+            if(true){
             this.props.dispatch(loginUser(dataToSubmit)).then(response =>{
                 if(response.payload.loginSuccess){
                     const id = response.payload.id
